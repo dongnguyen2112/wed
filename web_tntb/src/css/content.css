@@ -1,0 +1,6 @@
+.content {
+    margin-left: 306px; /* Để tạo khoảng cách cho sidebar */
+    padding: 20px; /* Có thể tùy chỉnh thêm */
+    height: 100vh; /* Chiều cao bằng với sidebar */
+    background-color: #f5f5f5; /* Màu nền cho nội dung */
+}

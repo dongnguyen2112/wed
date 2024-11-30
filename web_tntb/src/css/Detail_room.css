@@ -1,0 +1,115 @@
+.room-list {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 600px; /* Giới hạn chiều cao của danh sách phòng */
+  overflow-y: auto; /* Thêm thanh cuộn dọc */
+  position: relative; /* Ensure positioning context for other elements inside */
+}
+
+.room-list::-webkit-scrollbar {
+  width: 8px; /* Chiều rộng của thanh cuộn */
+}
+
+.room-list::-webkit-scrollbar-thumb {
+  background-color: gray; /* Màu của thanh cuộn */
+  border-radius: 8px;
+}
+
+.room-list::-webkit-scrollbar-thumb:hover {
+  background-color: #45a049; /* Màu khi hover */
+}
+
+.room-list h2 {
+  text-align: center;
+}
+
+.room-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.room-table th, .room-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.header_room {
+  position: sticky; /* Cố định tiêu đề khi cuộn */
+  top: 0; /* Đặt tiêu đề ở trên cùng */
+  background-color: #ffffff; /* Màu nền cho tiêu đề */
+  padding: 10px; /* Khoảng cách bên trong */
+  margin: 0; /* Bỏ margin nếu cần */
+  z-index: 10; /* Đảm bảo tiêu đề nằm trên các phần tử khác */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho tiêu đề */
+}
+
+.room-table th {
+  background-color: #1E90FF; /* Màu nền cho hàng tiêu đề */
+  color: white; /* Màu chữ cho hàng tiêu đề */
+  position: sticky; /* Cố định hàng tiêu đề khi cuộn */
+  z-index: 5; /* Đảm bảo hàng tiêu đề nằm dưới tiêu đề h2 */
+}
+
+.room-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.room-table tr:hover {
+  background-color: #ddd;
+}
+
+.qr-image1 {
+  width: 106px;
+  height: 100px; 
+}
+
+.detail-btn {
+  padding: 8px 16px;
+  background-color: #43CD80;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: auto;
+  cursor: pointer;
+}
+
+.detail-btn:hover {
+  background-color: #45a049;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Style for the PDF Download Button (Fixed Position) */
+.pdf-download-btn {
+  position: fixed; /* Fixed position relative to the viewport */
+  bottom: 10px; /* Stay 20px above the bottom of the viewport */
+  right: 30px; /* Stay 20px from the right edge */
+  background-color: #4caf50;
+  color: white;
+  padding: 0px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 20; /* Ensure it stays on top of other elements */
+}
+
+.pdf-download-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.pdf-download-btn:hover {
+  background-color: #45a049;
+}

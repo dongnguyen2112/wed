@@ -1,0 +1,107 @@
+.register-user {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-user__title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-user__form {
+  width: 100%;
+  max-width: 550px; /* Giới hạn chiều rộng của form */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-user__form-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register-user__label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.register-user__input {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+  appearance: none;
+}
+
+.register-user__input:focus {
+  border-bottom: 1px solid #333;
+}
+
+.register-user__input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.register-user__select {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  transition: border-color 0.3s ease;
+}
+
+.register-user__select:focus {
+  border-bottom: 1px solid #333;
+}
+
+.register-user__button {
+  width: 45%;
+  padding: 15px 0;
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-user__button:hover {
+  background-color: #555;
+}
+
+.register-user__error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-user__success-message {
+  color: #27ae60;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

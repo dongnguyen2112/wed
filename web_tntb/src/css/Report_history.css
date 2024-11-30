@@ -1,0 +1,59 @@
+.report-history {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-height: 90vh; 
+}
+
+.report-history-table {
+  width: 100%;
+  border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+  table-layout: fixed; /* Giúp bảng đồng nhất kích thước cột */
+  border-radius: 10px;
+}
+
+.report-history-header {
+  color: white;
+  text-align: center;
+  position: sticky; /* Giữ tiêu đề cố định */
+  top: 0; /* Cố định ở đầu bảng */
+  z-index: 1; /* Đảm bảo nằm trên các dòng dữ liệu */
+}
+
+.report-history-header th {
+  background-color: #1E90FF;
+  border: 1px solid #ccc; /* Thêm đường kẻ cho tiêu đề */
+  padding: 10px; /* Thêm padding cho tiêu đề */
+}
+
+.report-history-row {
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.report-history-row:hover {
+  background-color: #f5f5f5; /* Màu nền cho hàng khi hover */
+}
+
+.report-history-image-cell {
+  padding: 10px;
+}
+
+.report-history-image-cell img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Căn giữa nội dung các ô */
+.report-history-row td {
+  padding: 10px;
+  border: 1px solid #ccc; /* Đường kẻ cho các ô dữ liệu */
+}
+
+/* Giới hạn chiều cao bảng và thêm thanh cuộn */
+.report-history-table-wrapper {
+  max-height: 80vh; /* Điều chỉnh chiều cao tối đa của bảng */
+  overflow-y: auto; /* Bật thanh cuộn dọc */
+  border: 1px solid #ccc; /* Viền bên ngoài bảng */
+  border-radius: 10px;
+}

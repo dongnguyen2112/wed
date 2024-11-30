@@ -1,0 +1,136 @@
+.asset-transfer-container {
+    max-width: 80%;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.asset-transfer-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Căn giữa giữa các ô */
+    margin-bottom: 15px; /* Khoảng cách giữa các dòng */
+}
+
+.form-group {
+    flex: 0 0 48%; /* Đặt độ rộng cho mỗi ô là 48% */
+    margin-right: 2%; /* Khoảng cách giữa hai ô */
+}
+
+.form-group:last-child {
+    margin-right: 0; /* Bỏ khoảng cách cho ô cuối cùng trong dòng */
+}
+
+.form-group.full-width {
+    flex: 0 0 50%; /* Đặt ô tìm kiếm chiếm 50% chiều rộng */
+    margin: 0 auto; /* Đảm bảo ô nằm giữa trong dòng */
+}
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group select,
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.asset-list {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 230px; /* Giới hạn chiều cao của danh sách, bạn có thể điều chỉnh theo ý muốn */
+    overflow-y: auto; /* Kích hoạt thanh cuộn dọc */
+}
+
+.asset-header {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    position: sticky; /* Giữ header cố định khi cuộn */
+    top: 0; /* Đảm bảo header cố định ở đầu khi cuộn */
+    background-color: #fff; /* Đảm bảo nền của header không bị mất khi cuộn */
+    z-index: 1; /* Đảm bảo header không bị che khuất khi cuộn */
+}
+
+.asset-header, .asset-row {
+    display: grid; /* Dùng grid thay vì flex */
+    grid-template-columns: 1fr 1fr 1fr; /* Đảm bảo 3 cột đều nhau */
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-item {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.asset-row {
+    border-bottom: 1px solid #eee;
+}
+
+.asset-row span {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.asset-row input[type="checkbox"] {
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-column: 1; /* Đảm bảo checkbox chỉ nằm ở cột đầu tiên */
+}
+
+.no-assets-message {
+    text-align: center;
+    color: #888;
+    padding: 10px;
+}
+
+
+
+.no-assets-message {
+    color: #d9534f;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-transfer {
+    display: block; /* Đảm bảo nút là block element để căn giữa */
+    margin: 20px auto; /* Tạo khoảng cách bên trên và bên dưới, đồng thời căn giữa */
+    width: 50%; /* Chiều rộng của nút */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-transfer:hover {
+    background-color: #0056b3;
+}

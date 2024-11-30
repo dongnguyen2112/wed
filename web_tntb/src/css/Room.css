@@ -1,0 +1,79 @@
+.room-container-new {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  display: flex; /* Sử dụng Flexbox */
+  flex-direction: column; /* Sắp xếp các phần tử theo cột */
+  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+}
+
+.room-container-new:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Tăng bóng đổ khi hover */
+}
+
+.room-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Tăng kích thước chữ cho tiêu đề */
+  color: #333; /* Màu chữ tối hơn cho tiêu đề */
+}
+
+.form-group-new {
+  margin-bottom: 20px;
+  max-width: 800px; /* Tăng khoảng cách giữa các phần tử */
+  display: flex; /* Sử dụng Flexbox để căn giữa */
+  flex-direction: column; /* Căn chỉnh theo chiều dọc */
+  align-items: center; /* Căn giữa các phần tử con */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 16px; /* Tăng kích thước chữ cho nhãn */
+  color: #555; /* Màu chữ nhẹ hơn cho nhãn */
+  text-align: center; /* Căn giữa nhãn */
+}
+
+.form-input {
+  min-width: 200px;
+  padding: 12px; /* Tăng khoảng cách bên trong */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho viền */
+}
+
+.form-input:focus {
+  border-color: #4CAF50; /* Đổi màu viền khi input được chọn */
+  outline: none; /* Xóa outline mặc định */
+}
+
+.add-btn-new {
+  width: 39%;
+  padding: 12px; /* Tăng khoảng cách bên trong */
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho nút */
+  margin-top: 20px; /* Thêm khoảng cách phía trên nút */
+  display: block; /* Đảm bảo nút được căn giữa */
+  margin-left: auto; /* Căn giữa nút */
+  margin-right: auto; /* Căn giữa nút */
+}
+
+.add-btn-new:hover {
+  background-color: #3f8ddb; /* Đổi màu khi hover */
+}
+
+.add-btn-new:disabled {
+  background-color: #ccc;
+  cursor: not-allowed; /* Thay đổi con trỏ khi nút bị vô hiệu hóa */
+}

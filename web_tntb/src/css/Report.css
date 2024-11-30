@@ -1,0 +1,55 @@
+.report-container {
+  padding: 20px;
+  max-height: 90vh; /* Giới hạn chiều cao tổng thể nếu cần */
+  overflow: hidden; /* Tránh cuộn tổng thể container */
+}
+
+/* Cấu hình chung cho các bảng */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th, 
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Container cuộn cho nội dung bảng */
+.table-scroll-container {
+  max-height: 80vh; /* Giới hạn chiều cao của vùng cuộn */
+  overflow-y: auto; /* Thêm thanh cuộn dọc */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Nút chi tiết */
+.btn_details_report {
+  padding: 8px;
+  background-color: #43CD80;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+}
+
+/* Kiểu riêng từng bảng */
+.new-incidents-table th,
+.assigned-incidents-table th,
+.follow-up-incidents-table th {
+  position: sticky; /* Cố định tiêu đề */
+  top: 0; /* Khoảng cách từ đỉnh container */
+  z-index: 2; /* Đảm bảo tiêu đề nằm trên nội dung */
+  background-color: #1E90FF;
+  color: white;
+}

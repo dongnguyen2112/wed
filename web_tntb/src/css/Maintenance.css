@@ -1,0 +1,112 @@
+/* Container for the maintenance component */
+.maintenance-container-custom {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Notification styling */
+.notification-custom {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ffcccc;
+  background-color: #ffdddd;
+  color: #a33;
+  border-radius: 5px;
+}
+
+/* Tab styling */
+.react-tabs__tab-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.react-tabs__tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #e2e6ea;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.react-tabs__tab--selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Table styling */
+.maintenance-table-scroll-container {
+  max-height: 210px; /* Adjust as needed */
+  height: 205px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+}
+.maintenance-table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.maintenance-table-header-custom {
+  background-color: #1E90FF;
+  color: #fff;
+}
+.maintenance-table-header-custom th {
+  background-color: #1E90FF;
+  position: sticky; /* Add this */
+  top: 0; /* Stick to the top of the scrolling container */
+  z-index: 10; /* Ensure it appears above the table rows */
+}
+
+.maintenance-table-cell-custom,
+.maintenance-table-header-cell-custom {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.maintenance-table-row-custom:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Overdue row styling */
+.overdue-custom {
+  background-color: #ffcccc;
+}
+
+/* Assign button styling */
+.assign-button-custom {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.assign-button-custom.disabled-custom {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Maintenance table hover effect */
+.maintenance-table-row-custom:hover {
+  background-color: #f1f1f1;
+}
+/* Container to align the button to the right */
+.assign-button-container-custom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Assign button styling */
+.assign-button-custom:hover:not(.disabled-custom) {
+  background-color: #218838;
+}

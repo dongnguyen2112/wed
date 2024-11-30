@@ -1,0 +1,34 @@
+.transfer-history-new {
+  padding: 20px;
+  max-width: 1100px; /* Giới hạn chiều rộng của form */
+  margin: 0 auto; /* Căn giữa form trong trang */
+  background-color: #f9f9f9; /* Màu nền cho form */
+  border-radius: 8px; /* Bo tròn các góc của form */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bóng cho form */
+  height: 670px;
+  max-height: 650px;
+}
+
+.table-scroll {
+  overflow-x: auto; /* Thêm thanh cuộn ngang khi cần */
+  max-height: 600px; /* Giới hạn chiều cao của bảng */
+  margin-top: 10px; /* Khoảng cách giữa tiêu đề và bảng */
+  border-radius: 10px;
+}
+
+.transfer-history-new table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.transfer-history-new th, .transfer-history-new td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.transfer-history-new th {
+  background-color: #1E90FF; /* Màu nền cho hàng tiêu đề */
+  color: white; /* Màu chữ cho hàng tiêu đề */
+}

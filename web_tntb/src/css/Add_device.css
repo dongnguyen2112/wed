@@ -1,0 +1,212 @@
+
+.add-device-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.add-device-container h1 {
+  text-align: center; /* Căn giữa tiêu đề */
+  width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+  margin-bottom: 20px; /* Thêm khoảng cách phía dưới tiêu đề */
+}
+
+.form-group input, .form-group select{
+  padding: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Each form group will take 30% of the container */
+  margin-bottom: 15px;
+  min-width: 200px; /* Ensure that the form does not shrink too small */
+}
+.form-group1 {
+  flex-direction: column;
+  width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+  margin-bottom: 15px;
+  min-width: 200px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input[type="file"],
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.add-btn1 {
+  display: flex;
+  justify-content: flex-end; /* Căn sang phải */
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của container */
+}
+.add-btn-device:hover{
+  background-color: #219e51;
+}
+.add-btn-device {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 150px;
+}
+
+
+/* CSS cho Modal */
+.asset-modal {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* CSS cho Overlay */
+.asset-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Tiêu đề của Modal */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Các ô nhập liệu */
+.modal-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Đảm bảo padding không làm tràn input */
+}
+
+/* Bố trí các nút trên cùng một hàng */
+.modal-button-container {
+  display: flex;
+  justify-content: space-between; /* Canh chỉnh các nút ra 2 bên */
+  gap: 10px;
+  width: 100%;
+}
+
+/* Các nút Thêm và Đóng nằm trên cùng một hàng */
+.modal-button-delete{
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #aa2b2b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%; /* Chiếm khoảng 50% chiều rộng, để hai nút nằm cạnh nhau */
+}
+.modal-button-delete:hover{
+  background-color: #de3535;
+}
+.modal-button-close{
+  background-color: #7b7575;
+}
+.modal-button-close:hover{
+  background-color: #aaa2a2;
+}
+.modal-button:hover {
+  background-color: #247bdf;
+}
+
+.modal-button:focus {
+  outline: none;
+}
+
+/* Bảng Loại Tài Sản */
+
+.type-table-wrapper {
+  max-height: 200px;
+  overflow-y: auto; 
+  display: flex;
+  justify-content: center; 
+}
+
+/* Bảng loại tài sản */
+.type-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed; 
+}
+
+/* Header của bảng */
+.type-table th {
+  font-weight: bold;
+  text-align: center; 
+  padding: 10px;
+}
+
+/* Các ô trong bảng */
+.type-table td {
+  padding: 10px;
+  text-align: center; 
+  border-bottom: 1px solid #ddd;
+}
+
+/* Cột "Chọn" chứa checkbox */
+.type-table-cell-checkbox {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Cột "Loại Tài Sản" */
+.type-table-cell-type {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Thêm một chút kiểu hover cho các hàng */
+.type-table tr:hover {
+  background-color: #f1f1f1; 
+}
+
+
+
+

@@ -1,0 +1,142 @@
+/* Tổng container cho các biểu đồ */
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: -webkit-fill-available;
+}
+
+/* Card từng biểu đồ */
+.chart-card {
+    width: 45%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Đặt theo chiều dọc để thẻ h4 nằm trên biểu đồ */
+    justify-content: flex-start; /* Đảm bảo nội dung bắt đầu từ trên cùng */
+}
+
+.chart-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Khoảng cách giữa tiêu đề và biểu đồ */
+    text-align: center;
+    color: #333;
+}
+
+/* Doughnut Chart Styles */
+.doughnut-chart1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.doughnut-chart canvas {
+    width: 50%; /* Điều chỉnh kích thước của biểu đồ */
+    max-width: 400px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.doughnut-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px; /* Khoảng cách giữa chú thích và biểu đồ */
+    max-width: 250px; /* Đặt giới hạn độ rộng cho phần chú thích */
+    justify-content: center;
+}
+
+.doughnut-legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.doughnut-legend-color {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.doughnut-legend-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap; /* Tránh xuống dòng nếu nhãn quá dài */
+}
+
+/* Heading Style */
+.chart-card {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Container hiển thị thông tin tổng quan */
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+/* Thẻ hiển thị thông tin tổng quan */
+.info-card {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề cho các thẻ thông tin */
+.info-card .title-info-card {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Nội dung hiển thị trong thẻ */
+.info-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Đảm bảo responsive trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .chart-card {
+        width: 100%;
+        flex-direction: column; /* Thay đổi chiều hướng từ ngang thành dọc trên màn hình nhỏ */
+    }
+
+    .doughnut-chart {
+        flex-direction: column; /* Biểu đồ và chú thích sẽ xếp theo chiều dọc trên màn hình nhỏ */
+        align-items: center;
+    }
+
+    .doughnut-legend {
+        margin-left: 0; /* Loại bỏ khoảng cách bên trái khi màn hình nhỏ */
+        max-width: none; /* Mở rộng phần chú thích khi màn hình nhỏ */
+        align-items: center;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .info-card {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,78 @@
+.detail-transfer-history {
+    max-width: 600px; /* Độ rộng tối đa cho thành phần */
+    margin: 20px auto; /* Canh giữa */
+    padding: 20px; /* Khoảng cách bên trong */
+    border: 1px solid #ddd; /* Đường viền */
+    border-radius: 8px; /* Bo tròn các góc */
+    background-color: #f9f9f9; /* Màu nền */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.transfer-info {
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các mục */
+}
+
+.info-item {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Căn chỉnh nội dung giữa */
+    padding: 10px; /* Khoảng cách bên trong */
+    background-color: #fff; /* Màu nền cho mục thông tin */
+    border: 1px solid #ddd; /* Đường viền cho mục thông tin */
+    border-radius: 4px; /* Bo tròn các góc */
+}
+
+.info-item strong {
+    color: #333; /* Màu chữ cho nhãn */
+}
+
+.asset-table-container {
+    max-height: 200px; /* Đặt chiều cao tối đa cho vùng bảng */
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung vượt quá chiều cao tối đa */
+    border: 1px solid #ddd; /* Đường viền cho vùng bảng */
+    border-radius: 4px; /* Bo tròn các góc của vùng bảng */
+    margin-top: 20px; /* Khoảng cách trên vùng bảng */
+    position: relative; /* Cần thiết để các phần tử con như 'thead' sticky hoạt động */
+}
+
+.asset-table {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    border-collapse: collapse; /* Bỏ khoảng cách giữa các ô */
+}
+
+.asset-table th,
+.asset-table td {
+    border: 1px solid #ddd; /* Đường viền cho ô */
+    padding: 10px; /* Khoảng cách bên trong ô */
+    text-align: center; /* Căn trái nội dung trong ô */
+}
+
+.asset-table th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề cột */
+    font-weight: bold; /* In đậm tiêu đề */
+    position: sticky; /* Giữ tiêu đề cố định khi cuộn */
+    top: 0; /* Đặt tiêu đề ở phía trên cùng */
+    z-index: 2; /* Đảm bảo tiêu đề nằm trên các hàng dữ liệu */
+}
+
+.asset-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu nền cho hàng chẵn */
+}
+
+.asset-table tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi di chuột lên hàng */
+}
+
+.asset-image {
+    width: 50px; /* Độ rộng hình ảnh trong bảng */
+    height: 50px; /* Độ cao hình ảnh trong bảng */
+    object-fit: cover; /* Cắt hình ảnh cho vừa */
+    border-radius: 4px; /* Bo tròn hình ảnh */
+}
+

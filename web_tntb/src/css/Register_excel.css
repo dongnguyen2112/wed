@@ -1,0 +1,248 @@
+.excel-user-registration {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.excel-user-registration h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.excel-role-file-container {
+    margin-top: 20px;
+}
+.role-file-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa văn bản */
+    margin: 20px; /* Khoảng cách cho phần container */
+}
+
+.role-select-container
+ {
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.role-select-container select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.excel-upload-container {
+    display: flex;
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa input và button */
+    margin-top: 20px; /* Thêm khoảng cách phía trên */
+}
+
+.excel-upload-container input[type="file"] {
+    width: 100%; /* Đảm bảo input chiếm toàn bộ chiều rộng container */
+    max-width: 300px; /* Giới hạn chiều rộng tối đa */
+    padding: 8px; /* Thêm khoảng trống bên trong */
+    text-align: center; /* Canh chữ ở giữa */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.excel-upload-container .excel-btn-upload {
+    width: auto; /* Điều chỉnh kích thước vừa đủ cho chữ */
+    max-width: 150px; /* Giới hạn chiều rộng tối đa */
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.excel-upload-container .excel-btn-upload:hover {
+    background-color: #218838;
+}
+/* đăng ký là lại */
+/* Khối chứa toàn bộ dữ liệu */
+.excel-data-section {
+    margin-top: 20px;
+    text-align: center; /* Căn giữa tiêu đề và nút */
+}
+
+/* Tiêu đề Dữ liệu đã nhập */
+.excel-data-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Tạo khoảng cách dưới tiêu đề */
+}
+
+/* Bảng dữ liệu */
+.excel-table-container {
+    display: flex;
+    justify-content: center; /* Căn giữa bảng theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+    height: 100%; /* Đặt chiều cao nếu cần */
+    overflow: hidden; /* Giới hạn nội dung bên trong */
+}
+
+.excel-table-container table {
+    border-collapse: collapse;
+    width: 80%; /* Hoặc điều chỉnh theo ý bạn */
+    text-align: center; /* Căn giữa nội dung trong các ô */
+    margin: auto; /* Căn giữa bảng trong container */
+    table-layout: fixed; /* Đảm bảo các ô có kích thước phù hợp */
+}
+
+.excel-table-container thead {
+    position: sticky;
+    top: 0; /* Cố định tiêu đề ở đầu bảng */
+    background-color: #f4f4f4; /* Màu nền tiêu đề */
+    z-index: 2; /* Đảm bảo thead luôn ở trên */
+}
+
+.excel-table-container th, .excel-table-container td {
+    border: 1px solid #ddd; /* Viền ô */
+    padding: 8px;
+    text-align: center; /* Căn giữa nội dung trong ô */
+    overflow: hidden; /* Giới hạn nội dung nếu quá dài */
+}
+
+.excel-table-container tbody {
+    display: block;
+    max-height: 200px; /* Đặt chiều cao cuộn nội dung */
+    overflow-y: auto; /* Thanh cuộn theo chiều dọc */
+}
+
+.excel-table-container tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Duy trì kích thước cột */
+}
+
+.excel-table-container thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Đồng bộ kích thước cột với tbody */
+}
+
+
+/* Các nút hành động */
+.excel-action-buttons {
+    margin-top: 20px; /* Khoảng cách giữa bảng và nút */
+    display: flex;
+    justify-content: center; /* Căn giữa nút */
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.excel-register-btn,
+.excel-reset-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.excel-register-btn {
+    background-color: #28a745;
+}
+
+.excel-register-btn:hover {
+    background-color: #218838;
+}
+
+.excel-reset-btn {
+    background-color: #dc3545;
+}
+
+.excel-reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* Phần khung chứa cả người dùng tồn tại và người dùng mới */
+.user-section {
+    margin-top: 20px;
+}
+
+/* Tiêu đề */
+.user-section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Nút tải danh sách */
+.download-btn {
+    display: block;
+    margin: 20px auto 0; /* Tạo khoảng cách giữa bảng và nút */
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Phân biệt người dùng tồn tại và người dùng mới */
+.existing-users-section {
+    margin-bottom: 30px;
+}
+
+.new-users-section {
+    margin-bottom: 30px;
+}
+
+
+
+.excel-download-sample-file {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(18, 15, 204);
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 35px;
+    cursor: pointer;
+}
+
+.excel-download-sample-file:hover {
+    background-color: #0047b3;
+    color: white;
+}
+
+.excel-btn-upload {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.excel-btn-upload:hover {
+    background-color: #218838;
+}
+
+.excel-error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+

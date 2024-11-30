@@ -1,0 +1,205 @@
+.device-list-container {
+    padding: 20px;
+}
+
+.device-search-input {
+    margin: 5px auto; /* Căn giữa theo chiều ngang với margin tự động */
+    padding: 8px;
+    max-width: 300px;  /* Giới hạn chiều rộng tối đa */
+    width: 100%;       /* Chiếm toàn bộ chiều rộng có sẵn */
+    box-sizing: border-box;
+    position: sticky;  /* Cố định ô tìm kiếm */
+    top: 0;            /* Cố định ở trên cùng */
+    z-index: 10;      /* Đặt z-index cao hơn để ô tìm kiếm ở trên cùng */
+    background-color: #ffffff; /* Đặt màu nền cho ô tìm kiếm */
+    display: block;    /* Đảm bảo rằng ô tìm kiếm là block */
+}
+
+.device-table-wrapper {
+    overflow-y: auto; /* Cuộn dọc */
+    max-height: 540px; /* Đặt chiều cao tối đa */
+}
+
+.device-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.device-table th,
+.device-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center; /* Căn giữa tất cả nội dung trong bảng */
+}
+
+.device-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.device-table .stt-column,
+.device-table .id-column,
+.device-table .image-column,
+.device-table .name-column,
+.device-table .date-column,
+.device-table .position-column,
+.device-table .action-column {
+    position: sticky;
+    top: 0;  
+    background-color: #fff; 
+    z-index: 1; 
+}
+.device-table .stt-column {
+    background-color: #1E90FF;
+    color: white;  /* Đảm bảo màu chữ trong cột STT là màu trắng */
+}
+
+.device-thumbnail {
+    min-width: 100px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.device-table td input[type="checkbox"] {
+    margin: 0 auto; /* Căn giữa checkbox trong cột */
+    display: block;
+}
+
+/* Thêm một chút kiểu hover cho các hàng */
+.device-table tr:hover {
+    background-color: #f1f1f1; /* Màu nền khi hover qua hàng */
+}
+
+.view-details-button {
+    padding: 8px 10px;
+    background-color: #43CD80;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+}
+
+.view-details-button:hover {
+    background-color: #45a049;
+}
+
+/* Căn giữa nội dung bảng */
+.device-table th,
+.device-table td {
+    text-align: center; /* Căn giữa tất cả nội dung trong bảng */
+}
+
+/* CSS xuất QR */
+.device-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.device-table th, .device-table td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left; /* Đảm bảo căn trái cho dữ liệu khi xuất QR */
+}
+
+/* Căn giữa checkbox trong cột */
+.device-table td input[type="checkbox"] {
+    margin: 0 auto;
+    display: block;
+}
+/* lọc ngày */
+.date-filter {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.date-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.date-group .to-date .from-date{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    width: "100%";
+}
+
+.date-filter input[type="date"],
+.date-filter select {
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.date-filter input[type="date"]:focus,
+.date-filter select:focus {
+    border-color: #007bff;
+}
+
+/* Căn giữa toàn bộ nội dung bảng */
+.device-table td,
+.device-table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Đảm bảo tất cả các hàng có chiều cao đồng đều */
+.device-table tr {
+    height: 50px;
+}
+.download-buttons-container {
+    display: flex; /* Sử dụng flexbox để các nút nằm trên cùng một hàng */
+    justify-content: flex-end; /* Căn chỉnh các nút về phía bên phải */
+    gap: 10px; /* Giảm khoảng cách giữa các nút */
+    margin-top: 5px; /* Khoảng cách phía trên để các nút không sát quá */
+}
+
+.delete-button {
+    padding: 5px 10px; /* Điều chỉnh padding cho nút xóa */
+    background-color: #f44336; /* Màu đỏ cho nút xóa */
+    color: white;
+    margin-right: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    max-height: 35px;
+    cursor: pointer;
+    margin-top: 15px;
+    max-width: 10%;;
+    text-align: center;
+    border: none;
+    margin-bottom: 0; /* Bỏ khoảng cách dưới nút */
+    font-size: 14px; /* Điều chỉnh kích thước chữ */
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Màu khi hover */
+}
+
+.download-buttons-container a {
+    padding: 8px 15px; /* Giữ padding như các nút khác */
+    background-color: #00CC00;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    
+    margin-bottom: 0; /* Bỏ khoảng cách dưới nút */
+    font-size: 14px; /* Điều chỉnh kích thước chữ */
+}
+
+.download-buttons-container a:hover {
+    background-color: #45a049; /* Thay đổi màu khi hover */
+}
+

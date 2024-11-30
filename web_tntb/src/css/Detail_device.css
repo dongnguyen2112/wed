@@ -1,0 +1,149 @@
+/* Overall container for device details */
+.device-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.device-detail-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Device detail table */
+.device-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.device-detail-table th,
+.device-detail-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* New class for table headers */
+.table-header {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+.device-detail-table td {
+    background-color: #fff;
+}
+
+/* Input fields for device editing */
+.device-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Image styling */
+.device-image {
+    max-width: 250px;
+    max-height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Button group styling */
+.btn-group {
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    max-width: 200px; 
+    float: right; 
+    margin-left: 10px; 
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Repair history section */
+.repair-history {
+    margin-top: 40px;
+}
+
+.repair-history h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.repair-history-table,.maintenance-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.repair-history-table th,
+.repair-history-table td,
+.maintenance-history-table th,
+.maintenance-history-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.repair-history-table th,
+.maintenance-history-table th {
+    background-color: #f1f1f1;
+}
+
+.repair-history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.maintenance-history-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.repair-history-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.maintenance-history-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+/* Toast notification container */
+.Toastify__toast-container {
+    z-index: 9999;
+}
